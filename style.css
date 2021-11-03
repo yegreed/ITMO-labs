@@ -340,14 +340,11 @@ body{
 }
 .photos_body{
     background-color: #e0ae9a;
-
 }
 .photos_row{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    overflow: hidden;
-    max-height: 215px;
 }
 .photo{
     flex: 1 1 33.33333%;
