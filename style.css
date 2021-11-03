@@ -254,7 +254,7 @@ body{
 .miniAva{
     flex: 0 1 25%;
     max-width: 25%;
-    max-height: 25%;
+    height: 25%;
     padding: 5px;
 }
 
