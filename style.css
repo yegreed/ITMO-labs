@@ -350,9 +350,12 @@ body{
 }
 .photo{
     flex: 0 1 33%;
-    max-width: 33%;
     padding: 10px;
 
+}
+
+.photo img{
+    max-width: 100%;
 }
 
 .mainContent_posts{
