@@ -249,13 +249,11 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
 }
 .miniAva{
     flex: 0 1 25%;
     max-width: 25%;
     padding: 5px;
-
 }
 
 .statusBlock{
@@ -344,7 +342,6 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;
 }
 .photo{
     flex: 0 1 33%;
