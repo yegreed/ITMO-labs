@@ -249,11 +249,12 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-height: 113px;
 }
 .miniAva{
     flex: 0 1 25%;
     max-width: 25%;
-    max-height: 25%;
+    height: 100%;
     padding: 5px;
 }
 
@@ -338,18 +339,19 @@ body{
 }
 .photos_body{
     background-color: #e0ae9a;
-    
+
 }
 .photos_row{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    max-height: 33%;
 }
 .photo{
     flex: 0 1 33%;
     max-width: 33%;
-    max-height: 33%;
     padding: 10px;
+    height: 100%;
 }
 
 .mainContent_posts{
