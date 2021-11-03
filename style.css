@@ -249,6 +249,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-height: 115px;
 }
 .miniAva{
     flex: 0 1 25%;
@@ -337,6 +338,7 @@ body{
 }
 .photos_body{
     background-color: #e0ae9a;
+    max-height: 213px;
 }
 .photos_row{
     display: flex;
