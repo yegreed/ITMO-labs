@@ -1,0 +1,871 @@
+*{padding: 0; margin: 0; border: 0}
+*,*:before,*:after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;width: 100%;font-size: 100%; line-height: 1; font-size: 14px; -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -webkit-text-size-adjust: 100%}
+input,button,textarea{font-family: inherit}
+button{cursor: pointer}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited{text-decoration: none}
+a:hover{text-decoration: none}
+ul li{list-style: none}
+img{vertical-align: top}
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #dcdcdc;
+}
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 1080px;
+    min-width: 320px;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    max-width: 1080px;
+    margin: 0px auto;
+}
+.content{
+    flex: 1 1 auto;
+}
+
+.header{
+    background-color: #d5ae9f;
+    border: 1px solid #565656;
+}
+.header_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo{
+    margin: 5px;
+    width: 30%;
+}
+
+.logo_block{
+    background-color: #7768b0;
+    padding: 1px 5px;
+    border-radius: 12px;
+    height: 40px;
+    text-align: center;
+}
+
+.logo_text{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+.header_settings{
+    border-left: 1px solid #565656;
+}
+.settings_button{
+    font-size: 14px;
+    font-weight: 700;
+    background: none;
+    height: 50px;
+    padding: 5px;
+    color: white;
+    width: 150px;
+}
+.settings_button:hover{
+    color: #c9c8c8;
+    box-shadow: 1px 1px silver;
+}
+
+.mainContent{
+    background-color: #ecdad3;
+    border: 1px solid #565656;
+}
+.mainContent_row{
+    display: flex;
+
+}
+.mainContent_options{
+    max-width: 200px;
+    flex: 0 1 200px;
+}
+
+.optionsList{
+    margin: -2px;
+    border: 1px solid #565656;
+}
+.optionsList li{
+    height: 45px;
+    padding: 16px 8px;
+    border-bottom: 1px solid #565656;
+    font-weight: 700;
+    font-size: 14px;
+    color: #605688;
+}
+.optionsList li:hover{
+    border-bottom: 1px solid #c5c2c2;
+    color: #9b8cc9;
+}
+
+.mainContent_Info{
+    max-width: 920px;
+}
+
+.nameAndStat{
+    margin: -1px -2px 0px 1px;
+    height: 45px;
+    border: 1px solid #565656;
+}
+.nameAndStat_row{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.name{
+    flex: 0 1 75%;
+}
+.onlineStatus{
+    flex: 0 1 25%;
+    min-width: 210px;
+    margin: 0px -40px 0px 0px;
+}
+.nameAndStat_text{
+    padding: 12px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #605688;
+}
+
+.mainContent_columns{
+    margin: 1px;
+    border-left: 1px solid #565656;
+}
+.columns_row{
+    display: flex;
+}
+.photoBlock{
+    width: 25%;
+    margin: 2px;
+    flex: 0 1 auto;
+}
+.photoBlock_ava{
+    width: 100%;
+    margin: 10px;
+    border-radius: 16px;
+}
+.photoBlock_buttons{
+    display: flex;
+    padding: 5px 0px 0px 24px;
+    justify-content: space-between;
+}
+.photoBlock_button_chat{
+    width: 48%;
+    height: 40px;
+    background-color: #e0ae9a;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #605688;
+    background-image: url("chat.png");
+    background-repeat: no-repeat;
+    background-size: 0%;
+    background-position: 50% 50%;
+}
+.photoBlock_button_addFriend{
+    width: 48%;
+    height: 40px;
+    background-color: #e0ae9a;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #605688;
+    background-image: url("add-friend.png");
+    background-repeat: no-repeat;
+    background-size: 0%;
+    background-position: 50% 50%;
+}
+
+.photoBlock_button_addFriend:hover{
+    background-color: #deb4a4;
+    box-shadow: 1px 1px #cea190;
+    color: #644dab;
+}
+.photoBlock_button_chat:hover{
+    background-color: #deb4a4;
+    box-shadow: 1px 1px #cea190;
+    color: #644dab;
+}
+.followers{
+    width: 90%;
+    background-color: #e0ae9a;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #605688;
+    margin: 10px 0px 0px 22px;
+    text-align: center;
+    padding: 5px 0px;
+}
+.news{
+    display: flex;
+    justify-content: center;
+}
+.news_text{
+    width: 50%;
+    background-color: #e0ae9a;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #605688;
+    margin: 10px 0px 0px 22px;
+    text-align: center;
+    padding: 5px 0px;
+}
+.news_text:hover{
+    background-color: #deb4a4;
+    box-shadow: 1px 1px #cea190;
+    color: #644dab;
+    cursor: pointer;
+}
+.photoBlock_friends{
+    margin: 15px;
+    width: 100%;
+}
+.friends_title{
+    border-radius: 8px 8px 0px 0px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 12px;
+    color: #605688;
+    text-align: center;
+    padding: 5px 0px;
+}
+.friends_body{
+    background-color: #e0ae9a;
+}
+.friends_row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.miniAva{
+    flex: 0 1 25%;
+    max-width: 25%;
+    padding: 5px;
+
+}
+
+.statusBlock{
+    width: 75%;
+    flex: 0 1 auto;
+}
+.status{
+    margin: 15px 25px;
+    background-color: #e0ae9a;
+    width: 90%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #605688;
+    padding: 5px;
+    border-radius: 8px;
+}
+.status p{
+    margin-top: 2px;
+}
+.infoBlock{
+    background-color: #e0ae9a;
+    margin: 15px 25px;
+    border-radius: 8px;
+    width: 90%;
+}
+.infoBlock_row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.info_name{
+    flex: 0 1 50%;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #605688;
+}
+.info_value{
+    flex: 0 1 50%;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #605688;
+}
+
+.infoBlock_moreInf{
+    margin: 10px;
+    text-align: center;
+}
+.moreInf_button{
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    background-color: #dca893;
+    font-size: 12px;
+    color: #605688;
+    border-bottom: 1px solid #c09e91;
+    width: 50%;
+}
+.moreInf_button:hover{
+    background-color: #deb4a4;
+    box-shadow: 1px 1px #cea190;
+    color: #644dab;
+}
+
+.mainContent_photos{
+    margin: 10px 25px;
+    width: 90%;
+}
+.photos_title{
+    border-radius: 8px 8px 0px 0px;
+    background-color: white;
+    font-weight: 700;
+    font-size: 12px;
+    color: #605688;
+    padding: 5px 5px;
+}
+.photos_body{
+    background-color: #e0ae9a;
+}
+.photos_row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.photo{
+    flex: 0 1 33%;
+    max-width: 33%;
+    padding: 10px;
+}
+
+.mainContent_posts{
+    margin: 10px 25px;
+    width: 90%;
+}
+.posts_title{
+    flex: 0 1 95%;
+    font-weight: 700;
+    font-size: 12px;
+    color: #605688;
+}
+.posts_titleBody{
+    border-radius: 8px 8px 0px 0px;
+    background-color: white;
+    padding: 5px;
+}
+.title_Row{
+    display: flex;
+    align-items: center;
+}
+.search{
+    flex: 0 1 5%;
+}
+.search_bar{
+    background-color: #c09e91;
+    padding: 0px 2px;
+    border-radius: 4px;
+}
+.posts_body{
+    background-color: #e0ae9a;
+}
+.post{
+    margin: auto;
+}
+.post_row{
+    display: flex;
+    justify-content: center;
+}
+.post_body{
+    flex: 0 1 90%;
+    width: 90%;
+    padding: 10px;
+}
+.mini_photo{
+    width: 15%;
+    padding: 10px 10px;
+    height: 15%;
+    flex: 0 1 10%;
+    border-radius: 50%;
+}
+.post_header{
+    font-weight: 700;
+    font-size: 12px;
+    color: #605688;
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
+    width: 90%;
+}
+.post_content{
+    margin-top: 10px;
+}
+.post_text{
+    font-weight: 700;
+    font-size: 10px;
+    color: #605688;
+    border-radius: 4px 4px 0px 0px;
+    background-color: white;
+    padding: 4px;
+    width: 80%;
+    position: relative;
+    left: 20px;
+}
+.post_img{
+    width: 80%;
+    position: relative;
+    left: 20px;
+}
+.post_bottom{
+    border-radius: 0px 0px 4px 4px;
+    background-color: white;
+    padding: 4px;
+    width: 80%;
+    position: relative;
+    left: 20px;
+}
+.post_reactions{
+    margin-top: 10px;
+}
+.write_comment{
+    border-radius: 4px;
+    text-decoration: none;
+    width: 80%;
+    padding: 5px;
+    height: 40px;
+}
+.send{
+    padding: 5px;
+    width: 10%;
+    border-radius: 4px;
+    height: 40px;
+    background-image: url("comment.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+@media (max-width: 950px) {
+    .news_text{
+        padding: 4px;
+        font-size: 10px;
+    }
+    .photoBlock_button_addFriend, .photoBlock_button_chat{
+        background-size: 46%;
+        font-size: 0px;
+    }
+    .followers{
+        font-size: 10px;
+    }
+    .status{
+        font-size: 11px;
+    }
+    .info_name, .info_value{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 760px) {
+    .photoBlock{
+        width: 35%;
+    }
+    .statusBlock{
+        width: 65%;
+    }
+    .search{
+        flex: 0 1 3%;
+    }
+    .search_bar{
+        font-size: 10px;
+    }
+    .posts_title{
+        flex: 0 1 97%;
+        font-size: 10px;
+        width: 80%;
+    }
+    .photoBlock_buttons{
+        justify-content: space-around;
+    }
+    .photoBlock_button_addFriend, .photoBlock_button_chat{
+        background-size: 42%;
+        font-size: 0px;
+        width: 40%;
+    }
+}
+
+@media (max-width: 580px) {
+    .header{
+        height: 40px;
+    }
+    .header_logo{
+        width: 40%;
+        height: 40px;
+    }
+    .logo_block{
+        height: 30px;
+        margin: 5px;
+    }
+    .header_row{
+        height: 40px;
+        align-items: center;
+    }
+    .logo_text{
+        font-size: 26px;
+        text-align: center;
+        padding: 2px;
+    }
+    .header_settings{
+        height: 40px;
+    }
+    .settings_button{
+        height: 40px;
+    }
+    .optionsList li{
+        height: 30px;
+        padding: 10px 8px;
+        font-weight: 700;
+        font-size: 10px;
+    }
+    .nameAndStat_text{
+        font-size: 12px;
+        margin: -3px;
+        font-weight: 700;
+        color: #605688;
+    }
+    .nameAndStat{
+        height: 30px;
+    }
+    .photoBlock_buttons{
+        justify-content: space-around;
+    }
+    .photoBlock_button_chat, .photoBlock_button_addFriend{
+        font-size: 0px;
+        align-content: center;
+        height: 40px;
+        margin-top: -5px;
+        width: 30%;
+        background-size: 50%;
+    }
+    .followers{
+        font-size: 10px;
+    }
+    .photoBlock{
+        width: 40%;
+    }
+    .statusBlock{
+        width: 60%;
+    }
+    .status{
+        font-size: 12px;
+    }
+    .status p{
+        margin-top: 2px;
+    }
+    .photoBlock_friends{
+        width: 100%;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+    .photoBlock_ava{
+        width: 80%;
+        margin-left: 30px;
+    }
+    .post_img{
+        left: 10px;
+    }
+    .post_text{
+        left: 10px;
+    }
+    .post_bottom{
+        left: 10px;
+    }
+    .send{
+        width: 12%;
+        background-size: 80%;
+    }
+    .mini_photo{
+        width: 25%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header{
+        height: 35px;
+    }
+    .header_logo{
+        width: 40%;
+        height: 35px;
+    }
+    .logo_block{
+        height: 25px;
+        margin: 5px;
+    }
+    .header_row{
+        height: 35px;
+        align-items: center;
+    }
+    .logo_text{
+        font-size: 26px;
+        text-align: center;
+        padding: 0px;
+    }
+    .header_settings{
+        height: 35px;
+    }
+    .settings_button{
+        height: 35px;
+        font-size: 12px;
+    }
+    .optionsList li{
+        height: 30px;
+        padding: 10px 8px;
+        font-weight: 700;
+        font-size: 11px;
+    }
+    .nameAndStat_text{
+        font-size: 13px;
+        margin: -5px;
+        font-weight: 700;
+        color: #605688;
+    }
+    .nameAndStat{
+        height: 30px;
+        justify-content: space-between;
+    }
+    .photoBlock_buttons{
+        justify-content: space-evenly;
+        width: 90%;
+        margin-left: 1%;
+    }
+    .photoBlock_ava{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .columns_row{
+        margin-left: 20px;
+    }
+    .photoBlock_button_chat, .photoBlock_button_addFriend{
+        font-size: 0px;
+        align-content: center;
+        height: 40px;
+        margin-top: -5px;
+        width: 20%;
+        background-size: 40%;
+    }
+    .followers{
+        font-size: 11px;
+        padding: 8px;
+    }
+    .news_text{
+        font-size: 11px;
+        padding: 8px;
+    }
+    .columns_row{
+        flex-wrap: wrap;
+    }
+    .photoBlock{
+        width: 90%;
+    }
+    .statusBlock{
+        width: 90%;
+    }
+    .status{
+        font-size: 11px;
+    }
+    .status p{
+        margin-top: 1px;
+    }
+    .moreInf_button{
+        font-size: 11px;
+    }
+    .photoBlock_friends{
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 5px;
+    }
+    .send{
+        height: 12%;
+    }
+    .write_comment{
+        height: 12%;
+        font-size: 11px;
+        padding: 2px;
+    }
+    .post_img, .post_text, .post_bottom{
+        left: 5px;
+    }
+}
+
+@media (max-width: 390px) {
+    .photoBlock_friends{
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 5px;
+    }
+    .nameAndStat{
+        margin: -1px -2px 0px 1px;
+        height: 20px;
+    }
+    .nameAndStat_row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .name{
+        flex: 0 1 75%;
+        margin: -2px 0px 100px 0px;
+        min-width: 120px;
+    }
+    .onlineStatus{
+        flex: 0 1 25%;
+        min-width: 120px;
+        margin: -2px 0px 0px 0px;
+    }
+    .nameAndStat_text{
+        font-size: 10px;
+    }
+    .optionsList li{
+        font-size: 9px;
+        padding: 6px;
+        height: 20px;
+    }
+    .photoBlock{
+        width: 100%;
+    }
+    .photoBlock_buttons{
+        width: 88%;
+        margin-left: 0%;
+    }
+    .photoBlock_ava{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .photoBlock_button_chat, .photoBlock_button_addFriend{
+        height: 30px;
+        margin-top: -5px;
+        width: 30%;
+        background-size: 40%;
+    }
+    .followers{
+        font-size: 9px;
+        padding: 4px;
+        width: 80%;
+    }
+    .news_text{
+        font-size: 9px;
+        padding: 4px;
+        margin-left: -1%;
+    }
+    .statusBlock{
+        width: 100%;
+        margin-left: -5%;
+    }
+    .status{
+        font-size: 9px;
+    }
+    .moreInf_button{
+        font-size: 10px;
+    }
+    .friends_title{
+        font-size: 10px;
+    }
+    .photos_title{
+        font-size: 10px;
+    }
+    .posts_title{
+        font-size: 10px;
+    }
+    .write_comment{
+        font-size: 9px;
+        padding: 2px;
+        height: 12%;
+    }
+    .send{
+        width: 10%;
+        padding: 3px;
+    }
+    .post_img, .post_text, .post_bottom{
+        left: 3px;
+        font-size: 9px;
+    }
+    .post_header{
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .photoBlock_friends{
+        width: 98%;
+        margin-bottom: 5px;
+        margin-left: -6%;
+    }
+    .nameAndStat{
+        margin: -1px -2px 0px 1px;
+        height: 20px;
+    }
+    .nameAndStat_row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .name{
+        min-width: 130px;
+    }
+    .photoBlock{
+        width: 100%;
+    }
+    .photoBlock_ava{
+        width: 80%;
+        margin-left: 3%;
+    }
+    .photoBlock_buttons, .news{
+        margin-left: -6%;
+    }
+    .followers{
+        margin-left: 5%;
+    }
+    .photoBlock_button_chat, .photoBlock_button_addFriend{
+        width: 25%;
+        background-size: 50%;
+    }
+    .statusBlock{
+        margin-left: -15%;
+        width: 105%;
+    }
+    .status{
+        font-size: 10px;
+    }
+    .moreInf_button, .friends_title, .photos_title, .posts_title{
+        font-size: 11px;
+    }
+
+    .write_comment{
+        font-size: 10px;
+        padding: 2px;
+        height: 12%;
+    }
+    .send{
+        width: 10%;
+        padding: 5px;
+    }
+    .post_img, .post_text, .post_bottom{
+        left: 5px;
+        font-size: 10px;
+    }
+    .post_header{
+        font-size: 11px;
+    }
+
+}
