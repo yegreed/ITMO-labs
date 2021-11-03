@@ -257,6 +257,9 @@ body{
     height: 25%;
     padding: 5px;
 }
+.miniAva img{
+    max-width: 100%;
+}
 
 .statusBlock{
     width: 75%;
@@ -351,7 +354,6 @@ body{
 .photo{
     flex: 1 1 33.33333%;
     padding: 10px;
-
 }
 
 .photo img{
